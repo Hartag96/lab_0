@@ -30,6 +30,7 @@ public class TailsTest {
     @Test
     public void tailsShouldReturnListOfStringsOfSizeEqualsToInputStringLengthPlusOne() {
         tails = tailsGenerator.tails(HELLO);
+        System.out.println(tails);
         assertThat(tails, hasSize(HELLO.length() + 1));
     }
 
